@@ -27,17 +27,31 @@ const questions = [
         message: "Provide instructions and examples for use."
     },
     {
-        type: "input",
-        name: "credits",
-        message: "List your collaborators and their GitHub usernames."
-    },
-    {
         type: "checkbox",
         name: "license",
         message: "Please choose a licesnse",
         choices: ['MIT', 'GPL', 'WTFPL', 'Apache-2.0']
     },
-
+    {
+        type: "input",
+        name: "contributing",
+        message: "Enter contribution guidelines",
+    },
+    {
+        type: "input",
+        name: "tests",
+        message: "Enter test instructions",
+    },
+    {
+        type: "input",
+        name: "github",
+        message: "Enter your GitHub username",
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Enter your email address",
+    },
 ];
 
 // TODO: Create a function to write README file
