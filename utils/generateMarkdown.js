@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// A function that returns a license badge based on which license is passed in if there is no license, return an empty string.
 function renderLicenseBadge(license) {
   if (license !== "None"){
     return `![GitHub License](https://img.shields.io/badge/license-${license}-brightgreen.svg)`
@@ -7,17 +6,15 @@ function renderLicenseBadge(license) {
   return ""
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// A function that returns the license link if there is no license, return an empty string.
 function renderLicenseLink(license) {
   if (license !== "None"){
-    return (`* [License](#license)`)
+    return (`- [License](#license)`)
   }
   return ""
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// A function that returns the license section of README if there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "None") {
     return (
@@ -29,11 +26,11 @@ function renderLicenseSection(license) {
   return ""
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README. 
 function generateMarkdown(data) {
-  return ` ${renderLicenseBadge(data.license)}
+  return ` # ${data.title}
 
-  ## ${data.title}
+  ${renderLicenseBadge(data.license)}
 
   
   ## Description 
@@ -43,14 +40,12 @@ function generateMarkdown(data) {
   
   ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#questions)
-
-${renderLicenseLink(data.license)}
+  - [Installation](#installation)
+  - [Usage](#usage)
+  ${renderLicenseLink(data.license)}
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
 
   ## Installation
@@ -62,9 +57,7 @@ ${renderLicenseLink(data.license)}
 
   ${data.usage}
 
- 
-  ## License 
-
+  
   ${renderLicenseSection(data.license)}
 
   
@@ -80,8 +73,11 @@ ${renderLicenseLink(data.license)}
   
   ## Questions 
 
-  #GitHub: ${data.github}
-  #Email: ${data.email}
+  * GitHub: ${data.github} 
+
+  * [Link To GitHub Profile](https://github.com/${data.github})
+
+  For any additional questions please email me --> <${data.email}>
 
 `;
 }
