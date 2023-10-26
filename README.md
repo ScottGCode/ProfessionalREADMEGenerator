@@ -19,15 +19,12 @@ To install this project and get the development enviroment up and running:
 
 To use this command line application first open the file in the integrated terminal. Run the command ```node index.js``` and answer all the prompts that follow. Once you are finished you will recieve a "Success" message and your README.md will be generated. Your README will be stored a folder named utils and will be titled ```generatedREADME.md```. 
 
-Provide instructions and examples for use. Include screenshots as needed.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
+ScreenCapture Demo Link: https://drive.google.com/file/d/1OLHUAlGnYzmZTV9uy_DCVR9lo-EYM6LF/view 
 
 ## Credits
 
-University of Utah Coding Bootcamp Instructor and Teaching Assistants. Node.js documentation. 
+University of Utah Coding Bootcamp Instructor and Teaching Assistants. Node.js documentation. Stack Overflow. W3 School's documentation. Codecademy. MDN WebDocs. 
 
 ## License
 
